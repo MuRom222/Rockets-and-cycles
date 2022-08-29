@@ -8,28 +8,26 @@ public class SQRServiceTest {
 
 
     @Test
-    public void shouldCalcInParameter () {
+    public void shouldUpMeaning () {
         SQRService service = new SQRService();
 
-        int expected = 5;
-        int actual = service.calcSquare(200);
+        int expected = 8;
+        int actual = service.calcSqr(300);
 
         Assertions.assertEquals(expected,actual);
 
     }
 
     @Test
-    public void shouldСalcLowerBound () {
+    public void shouldDownMeaning () {
         SQRService service = new SQRService();
 
         int expected = 1;
-        int actual = service.calcSquare(100);
+        int actual = service.calcSqr(100);
 
         Assertions.assertEquals(expected,actual);
 
     }
-
-
 
 
 }
