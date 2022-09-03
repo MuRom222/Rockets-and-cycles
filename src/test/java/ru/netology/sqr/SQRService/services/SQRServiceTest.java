@@ -11,8 +11,8 @@ public class SQRServiceTest {
     public void shouldUpMeaning () {
         SQRService service = new SQRService();
 
-        int expected = 8;
-        int actual = service.calcSqr(300);
+        int expected = 5;
+        int actual = service.calcSqr(9000,10000);
 
         Assertions.assertEquals(expected,actual);
 
@@ -22,8 +22,8 @@ public class SQRServiceTest {
     public void shouldDownMeaning () {
         SQRService service = new SQRService();
 
-        int expected = 1;
-        int actual = service.calcSqr(100);
+        int expected = 5;
+        int actual = service.calcSqr(100,200);
 
         Assertions.assertEquals(expected,actual);
 
